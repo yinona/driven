@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Driven — Computational Materials Physics of Driven Systems</title>
+  <meta name="description" content="Research group of Yinon Ashkenazy at the Racah Institute of Physics, Hebrew University of Jerusalem. Computational materials physics of systems driven by intense electric fields, irradiation, and severe deformation. Long-running collaboration with CERN on the Compact Linear Collider (CLIC).">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,600;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,500;0,8..60,600;1,8..60,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <a class="wordmark" href="#top">Driven</a>
+    <nav aria-label="Primary">
+      <a href="#research">Research</a>
+      <a href="#cern">CERN</a>
+      <a href="#people">People</a>
+      <a href="#papers">Papers</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section id="top" class="hero">
+      <p class="kicker">Racah Institute of Physics · Hebrew University of Jerusalem</p>
+      <h1>Computational Materials Physics of Driven Systems</h1>
+      <p class="lede">
+        We study metals driven far from equilibrium by intense electric fields,
+        irradiation, or severe mechanical deformation. The method is the same
+        across these drives: isolate the controlling microscopic mechanism with
+        atomistic simulation, expose the scaling by varying the drive, and write
+        a reduced model that can be tested in experiment.
+      </p>
+      <p class="lede">
+        Since 2013 the group has led the Hebrew University collaboration with
+        <a href="https://home.cern">CERN</a> on material limits of
+        high-gradient accelerating structures for the
+        <a href="https://clic.cern">Compact Linear Collider (CLIC)</a>.
+      </p>
+    </section>
+
+    <section id="cern" class="cern-band" aria-labelledby="cern-title">
+      <p class="cern-label">CERN · CLIC collaboration</p>
+      <h2 id="cern-title">Vacuum breakdown in high-gradient accelerators</h2>
+      <p>
+        Vacuum breakdown — the sudden transition of a vacuum gap from insulating
+        to conducting — limits the electric field that copper accelerating
+        structures can sustain. Conventional models do not account for the
+        observed material dependence, which tracks crystal structure rather than
+        bulk thermodynamics, or for the large statistical variability of
+        breakdown.
+      </p>
+      <p>
+        The group’s working hypothesis is that the controlling mechanism is the
+        plastic response of the electrode, specifically the dynamics of mobile
+        dislocations. The Mobile Dislocation Density Fluctuation (MDDF) model
+        treats those dislocations as a birth–death process whose fluctuations
+        can nucleate breakdown. It predicts the field dependence of the
+        breakdown rate and accounts for pre-breakdown signals such as
+        dark-current spikes.
+      </p>
+      <p>
+        These predictions are tested with collaborators at CERN: field-emission
+        statistics, cryogenic high-field tests, and TEM cross-sections of
+        conditioned copper cathodes. A review with the principal CLIC
+        collaborators appeared in
+        <a href="https://doi.org/10.1103/h8wb-y278"><em>Reviews of Modern Physics</em> (2026)</a>.
+        The group co-organizes the MeVArc workshop series (chair, 2017).
+      </p>
+      <ul class="cern-links">
+        <li><a href="https://clic.cern">CLIC at CERN</a></li>
+        <li><a href="https://doi.org/10.1103/h8wb-y278">RMP review: vacuum breakdown</a></li>
+        <li><a href="https://github.com/yinona/mevarc26">MeVArc 2026</a></li>
+      </ul>
+    </section>
+
+    <section id="research" aria-labelledby="research-title">
+      <h2 id="research-title">Research</h2>
+      <p class="section-intro">
+        Three ideas recur: mean-field reductions that yield scaling laws;
+        effective temperatures that map a driven steady state onto equilibrium
+        thermodynamics; and stochastic transitions in an internal population
+        (mobile dislocations, point defects) that set thresholds such as
+        breakdown or a creep crossover.
+      </p>
+
+      <div class="topics">
+        <article>
+          <h3>High-field electrodes</h3>
+          <p>
+            Stochastic dislocation models of vacuum breakdown, conditioning as
+            cyclic restructuring of the near-surface network, and electron
+            microscopy of field-exposed copper. Primary experimental partner:
+            CERN / CLIC.
+          </p>
+        </article>
+        <article>
+          <h3>Irradiation-driven creep</h3>
+          <p>
+            In nanostructured alloys, grain boundaries dominate defect
+            absorption. Grain-boundary flow under a sustained defect flux
+            produces irradiation creep whose grain-size dependence marks the
+            crossover from boundary-dominated to bulk-dominated response.
+          </p>
+        </article>
+        <article>
+          <h3>Phase evolution under shear</h3>
+          <p>
+            Severe plastic deformation drives immiscible alloys into steady
+            states described by an effective temperature. Crystal structure
+            sets the mixing mechanism: dislocations cross FCC interfaces
+            (superdiffusive mixing) and are blocked at BCC ones (diffusive mixing).
+          </p>
+        </article>
+        <article>
+          <h3>Liquids and learned state variables</h3>
+          <p>
+            Crystallization kinetics at deep undercooling, a predicted
+            liquid–liquid transition in iron at core–mantle pressures, and a
+            funded study of vibrational entropy in liquids using machine-learned
+            estimators (HUJI AI initiative, 2026–2027).
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="people" aria-labelledby="people-title">
+      <h2 id="people-title">People</h2>
+
+      <h3>Principal investigator</h3>
+      <div class="person pi">
+        <p class="name">Yinon Ashkenazy</p>
+        <p class="role">Associate Professor, Racah Institute of Physics</p>
+        <p class="role">Head, Interdisciplinary Computational Physics Laboratory (since 2021)</p>
+        <p class="role">Head, Hebrew University–CLIC collaboration at CERN (since 2013)</p>
+        <p class="links">
+          <a href="mailto:yinon.ash@mail.huji.ac.il">yinon.ash@mail.huji.ac.il</a>
+          ·
+          <a href="https://icpl.huji.ac.il">icpl.huji.ac.il</a>
+        </p>
+      </div>
+
+      <h3>Senior researcher</h3>
+      <ul class="roster">
+        <li>
+          <span class="name">Inna Popov</span>
+          <span class="note">Electron microscopy of high-field electrodes; co-author on the CERN breakdown and conditioning papers</span>
+        </li>
+      </ul>
+
+      <h3>Current students</h3>
+      <ul class="roster">
+        <li>
+          <span class="name">Rann Shikler</span>
+          <span class="note">PhD · thermodynamics of iron near melting; machine-learned vibrational entropy</span>
+        </li>
+        <li>
+          <span class="name">Dolev Ronen</span>
+          <span class="note">MSc</span>
+        </li>
+      </ul>
+
+      <h3>PhD alumni</h3>
+      <ul class="roster">
+        <li>
+          <span class="name">Noya Dimanstein Firman</span>
+          <span class="note">2025 · irradiation-induced creep in nanocrystalline Cu alloys; MSc 2013</span>
+        </li>
+        <li>
+          <span class="name">Eliyahu Zvi Engelberg</span>
+          <span class="note">2022 · electric-field breakdown nucleation and dislocations (CERN / CLIC)</span>
+        </li>
+        <li>
+          <span class="name">Ayelet Badichi Yashar</span>
+          <span class="note">breakdown nucleation; co-author of the 2019 PRAB theory paper</span>
+        </li>
+      </ul>
+
+      <h3>MSc alumni</h3>
+      <ul class="roster compact">
+        <li><span class="name">Sagy Lachmann</span> <span class="note">2018 · field-emission current statistics</span></li>
+        <li><span class="name">Liron Yosef</span> <span class="note">2017 · grain-boundary solubility in immiscible alloys</span></li>
+        <li><span class="name">Amit Weiss</span> <span class="note">2015</span></li>
+        <li><span class="name">Noya Dimanstein Firman</span> <span class="note">2013</span></li>
+        <li><span class="name">Shani Gazit</span> <span class="note">2005</span></li>
+      </ul>
+
+      <h3>Former postdoctoral fellows</h3>
+      <ul class="roster">
+        <li>
+          <span class="name">Menahem Krief</span>
+          <span class="note">2021–2023 · numerical simulation of materials; continues to publish with the group</span>
+        </li>
+        <li>
+          <span class="name">Tomoko Muranaka</span>
+          <span class="note">2014 · experimental work at CERN</span>
+        </li>
+      </ul>
+    </section>
+
+    <section id="papers" aria-labelledby="papers-title">
+      <h2 id="papers-title">Selected papers</h2>
+      <p class="section-intro">A short list, CERN and high-field work first. DOIs open the published article.</p>
+
+      <ol class="papers">
+        <li>
+          W. Wuensch, S. Calatroni, F. Djurabekova, A. Kyritsakis, Y. Ashkenazy,
+          <a href="https://doi.org/10.1103/h8wb-y278">Fundamentals of vacuum breakdown in high-gradient accelerator structures</a>.
+          <cite>Rev. Mod. Phys.</cite> <strong>98</strong>, 025004 (2026).
+        </li>
+        <li>
+          E. Z. Engelberg, Y. Ashkenazy, M. Assaf,
+          <a href="https://doi.org/10.1103/PHYSREVLETT.120.124801">Stochastic model of breakdown nucleation under intense electric fields</a>.
+          <cite>Phys. Rev. Lett.</cite> <strong>120</strong>, 124801 (2018).
+        </li>
+        <li>
+          E. Z. Engelberg, A. B. Yashar, Y. Ashkenazy, M. Assaf, I. Popov,
+          <a href="https://doi.org/10.1103/PHYSREVACCELBEAMS.22.083501">Theory of electric field breakdown nucleation due to mobile dislocations</a>.
+          <cite>Phys. Rev. Accel. Beams</cite> <strong>22</strong>, 083501 (2019).
+        </li>
+        <li>
+          E. Z. Engelberg, J. Paszkiewicz, R. Peacock, S. Lachmann, Y. Ashkenazy, W. Wuensch,
+          <a href="https://doi.org/10.1103/PHYSREVACCELBEAMS.23.123501">Dark current spikes as an indicator of mobile dislocation dynamics under intense dc electric fields</a>.
+          <cite>Phys. Rev. Accel. Beams</cite> <strong>23</strong>, 123501 (2020).
+        </li>
+        <li>
+          M. Jacewicz, I. Profatilova, Y. Ashkenazy, S. Calatroni, I. Popov, P. Szaniawski, W. Wuensch,
+          <a href="https://doi.org/10.1063/5.0258896">Surface and sub-surface modifications of copper electrodes exposed to electric high-field conditioning at cryogenic temperatures</a>.
+          <cite>J. Appl. Phys.</cite> <strong>137</strong>(19) (2025).
+        </li>
+        <li>
+          Y. Ashkenazy, N. Q. Vo, D. Schwen, R. S. Averback, P. Bellon,
+          <a href="https://doi.org/10.1016/J.ACTAMAT.2011.11.014">Shear induced chemical mixing in heterogeneous systems</a>.
+          <cite>Acta Mater.</cite> <strong>60</strong>, 984 (2012).
+        </li>
+        <li>
+          Y. Ashkenazy, R. S. Averback,
+          <a href="https://doi.org/10.1021/NL301554K">Irradiation induced grain boundary flow — a new creep mechanism at the nanoscale</a>.
+          <cite>Nano Lett.</cite> <strong>12</strong>, 4084 (2012).
+        </li>
+        <li>
+          S. G. Mayr, Y. Ashkenazy, K. Albe, R. S. Averback,
+          <a href="https://doi.org/10.1103/PHYSREVLETT.90.055505">Mechanisms of radiation-induced viscous flow: role of point defects</a>.
+          <cite>Phys. Rev. Lett.</cite> <strong>90</strong>, 055505 (2003).
+        </li>
+        <li>
+          R. Shikler, N. D. Firman, Y. Ashkenazy,
+          <a href="https://doi.org/10.1016/j.physb.2025.417963">Model for the thermodynamics of iron at high pressures near melting</a>.
+          <cite>Physica B</cite> <strong>719</strong>, 417963 (2025).
+        </li>
+      </ol>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact</h2>
+      <address>
+        Yinon Ashkenazy<br>
+        Racah Institute of Physics<br>
+        Hebrew University of Jerusalem<br>
+        E. J. Safra Campus, Givat Ram<br>
+        Jerusalem 9190401, Israel
+      </address>
+      <p>
+        <a href="mailto:yinon.ash@mail.huji.ac.il">yinon.ash@mail.huji.ac.il</a><br>
+        +972-2-6585178
+      </p>
+      <p>
+        MSc and PhD students interested in computational materials physics
+        of driven systems, or in the CERN high-field experiments, should write
+        to Yinon Ashkenazy.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Driven · Racah Institute of Physics · Hebrew University of Jerusalem · CERN / CLIC</p>
+    <p><a href="https://github.com/driven-physics/driven-physics.github.io">Source on GitHub</a></p>
+  </footer>
+</body>
+</html>

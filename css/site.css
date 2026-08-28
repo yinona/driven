@@ -1,0 +1,317 @@
+:root {
+  --ink: #16181d;
+  --muted: #5c6370;
+  --paper: #f6f3ec;
+  --card: #fffdf8;
+  --line: #ddd6c8;
+  --accent: #1e3a5f;
+  --cern: #0053a1;
+  --max: 44rem;
+  --wide: 54rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Source Sans 3", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.55;
+}
+
+.skip {
+  position: absolute;
+  left: -999px;
+  top: 0.5rem;
+}
+
+.skip:focus {
+  left: 0.75rem;
+  z-index: 10;
+  background: var(--card);
+  padding: 0.4rem 0.7rem;
+}
+
+a {
+  color: var(--cern);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.15em;
+}
+
+a:hover {
+  color: var(--accent);
+}
+
+.site-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem 1.5rem;
+  max-width: var(--wide);
+  margin: 0 auto;
+  padding: 1.4rem 1.4rem 0;
+}
+
+.wordmark {
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 1.55rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.wordmark:hover {
+  color: var(--cern);
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem 1.15rem;
+}
+
+nav a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.92rem;
+}
+
+nav a:hover {
+  color: var(--ink);
+}
+
+main {
+  max-width: var(--wide);
+  margin: 0 auto;
+  padding: 0 1.4rem 3rem;
+}
+
+.hero {
+  max-width: var(--max);
+  padding: 2.4rem 0 2rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.kicker {
+  margin: 0 0 0.7rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+  letter-spacing: 0.01em;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Source Serif 4", Georgia, serif;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+h1 {
+  margin: 0 0 1.15rem;
+  font-size: clamp(1.7rem, 3.4vw, 2.25rem);
+}
+
+h2 {
+  margin: 0 0 0.85rem;
+  font-size: 1.45rem;
+}
+
+h3 {
+  margin: 1.6rem 0 0.45rem;
+  font-size: 1.08rem;
+}
+
+.lede {
+  margin: 0 0 0.9rem;
+  max-width: 40rem;
+}
+
+.cern-band {
+  margin: 2rem -1.4rem 0;
+  padding: 1.5rem 1.4rem 1.6rem;
+  background: #eef3f8;
+  border-top: 3px solid var(--cern);
+  border-bottom: 1px solid #d5e0ec;
+}
+
+.cern-band p {
+  max-width: var(--max);
+}
+
+.cern-label {
+  margin: 0 0 0.35rem;
+  color: var(--cern);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.cern-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.25rem;
+  margin: 1rem 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.95rem;
+}
+
+#research,
+#people,
+#papers,
+#contact {
+  max-width: var(--max);
+  padding-top: 2.4rem;
+}
+
+.section-intro {
+  color: var(--muted);
+  margin-top: 0;
+}
+
+.topics {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.9rem;
+  margin-top: 1.3rem;
+}
+
+.topics article {
+  background: var(--card);
+  border: 1px solid var(--line);
+  padding: 0.95rem 1.05rem 0.85rem;
+}
+
+.topics h3 {
+  margin: 0 0 0.4rem;
+}
+
+.topics p {
+  margin: 0;
+  color: var(--ink);
+}
+
+.person.pi {
+  margin: 0.4rem 0 0.2rem;
+}
+
+.name {
+  font-weight: 600;
+}
+
+.role,
+.note,
+.links {
+  color: var(--muted);
+  margin: 0.15rem 0 0;
+}
+
+.roster {
+  list-style: none;
+  margin: 0.3rem 0 0;
+  padding: 0;
+}
+
+.roster li {
+  display: grid;
+  gap: 0.15rem;
+  padding: 0.55rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.roster.compact li {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.7rem;
+  align-items: baseline;
+}
+
+.papers {
+  margin: 0.8rem 0 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: paper;
+}
+
+.papers li {
+  counter-increment: paper;
+  position: relative;
+  padding: 0.85rem 0 0.85rem 2rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.papers li::before {
+  content: counter(paper);
+  position: absolute;
+  left: 0;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.papers cite {
+  font-style: italic;
+}
+
+address {
+  font-style: normal;
+  margin: 0 0 0.9rem;
+}
+
+.site-footer {
+  max-width: var(--wide);
+  margin: 0 auto;
+  padding: 1.2rem 1.4rem 2.4rem;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.site-footer p {
+  margin: 0.2rem 0;
+}
+
+@media (min-width: 720px) {
+  .topics {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .cern-band {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+}
+
+@media print {
+  body {
+    background: #fff;
+    font-size: 11pt;
+  }
+
+  .site-header nav,
+  .skip,
+  .site-footer a {
+    display: none;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
