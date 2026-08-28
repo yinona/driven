@@ -1,11 +1,12 @@
-# Driven
+# Computational Materials Physics of Driven Systems
 
-Research-group webpage for **Computational Materials Physics of Driven Systems**
-(Yinon Ashkenazy, Racah Institute of Physics, Hebrew University of Jerusalem).
+Research-group webpage (Yinon Ashkenazy, Racah Institute of Physics,
+Hebrew University of Jerusalem).
 
-Live site: https://driven-physics.github.io
+Live site: https://yinona.github.io/driven
 
-Static HTML, served from this repository by GitHub Pages.
+Static HTML, served as a GitHub Pages project site from this repository.
+A university host can replace this later without changing the page structure.
 
 ## Local preview
 
