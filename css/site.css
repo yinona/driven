@@ -254,6 +254,10 @@ h3 {
   color: var(--ink);
 }
 
+.nobr {
+  white-space: nowrap;
+}
+
 .person.pi {
   margin: 0.4rem 0 0.2rem;
 }
